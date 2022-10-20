@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreUpDate : MonoBehaviour
 {
-    [SerializeField] ScoreData scoreData;
+   
     [SerializeField] Text scoreText;
 
 
@@ -16,6 +16,7 @@ public class ScoreUpDate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreData.TextUpdate(scoreText);
+
+        scoreText.text ="Score"+" "+ ScoreData.Score.ToString();
     }
 }
