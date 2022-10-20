@@ -7,10 +7,7 @@ public class ScoreData : MonoBehaviour
 {
     public static int Score;
 
-    private void Start()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
+ 
     public void PlusScore(int score)
     {
         Score += score;
